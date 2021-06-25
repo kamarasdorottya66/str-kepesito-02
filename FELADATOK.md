@@ -123,6 +123,10 @@ Ehhez a komponenshez tartozó teszt futtatása: ```ng test --include='**/book-li
 
 _Megjegyzés: a tesztekhez nem kell JSON-SERVER-t használni, csak a müködés vizuális ellenőrzéséhez kell futtatni._
 
+### Json-server futtatása a teszteléshez
+Az adatbázis fájl elérési útja (fontos, hogy az angular projekt legyen a gyökér):  
+`server/db.json`
+
 1. Készíts egy sima táblázatot az alábbi elemekkel:
 - Adott egy táblázat egy 'section' (class="table-section") elemen belül 
 - Adott a táblázatban egy 'thead' elem.
@@ -157,7 +161,7 @@ Törekedj arra, hogy a scss tartalom a 'table-section' elemből eredjen, és min
 - a 'thead és tr'  háttérszíne legyen (background-color): rgb(226, 78, 27).
 - Minden tovább egyéni formázás megengedett.
 
-Segítségül egy "van egy másolat" az adatbázisról a db-recap.json file-ban. (server/backup mappa alatt)
+Segítségül van egy másolat az adatbázisról a db-recap.json file-ban. (server/backup mappa alatt)
 
 ## 3. FELADAT
 - **Szülő-Gyerek komponens interakció, adatkötések** (15 pont összesen)
@@ -195,11 +199,12 @@ A kártya adatainak, és képének meg kell változnia a kiválasztott elemnek m
 - h3 szövege középen legyen  (text-align), szöveg szín: rgb(226, 78, 27);
 
 ## 4. FELADAT:
- - **FireBase deploy** (15 pont összesen).
+ - **Github deploy** (15 pont összesen).
  
- 1. készíts egy projektet a FireBase weboldalán. Elnevezési séma: 'vezetéknév-keresztnév-book'
- - pl: kovacs-geza-book (csak kis betűvel és NE használj ékezetet). Egy-két betű eltérhet, ha foglalt lenne a projekt név.
- 2. Builded le az alkalmazást és initalizáld a hostingot az alkalmazásban.
- 3. Töltsd fel a Hosting szolgáltatásba.
- 4. Van egy deploy-url.txt file a gyökér könyvtárban. Írd bele az alkalmazás elérését. Figyelj a pontos másolásra!
- 5. Az elkészült komponensek meg kell jelenniük a külső url hivatkozáson.
+ - Github Deploy (15 pont összesen).
+
+1. Állítsd be a Github fiókodban a saját Github oldalad. (https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site)
+2. Klónozd le az oldalad repo -ját a gépedre.
+3. Builded le az alkalmazást.
+3. A dist/<projekt név> tartalmát töltsd fel a github pages -re.
+5. Az elkészült komponenseknek meg kell jelenniük a külső url hivatkozáson.
