@@ -155,8 +155,8 @@ Törekedj arra, hogy a scss tartalom a 'table-section' elemből eredjen, és min
 
 - Használd fel a "Get Book List" feliratú gombhoz, a fejléc és adatok formázásához a  "set-text-style"  mixin-t.
 
- Táblázat jelenjen meg középen, a 'table-holder' jelöléssel ellátott 'section' elem beállításai: 
-- Használj flex-box-ot. A flex-direction oszlopos rendezésében helyezd a beltartartalmakat középre (table, és getBooks button)
+ Táblázat jelenjen meg középen, a 'table-holder' jelöléssel ellátott 'section' elem beállításai:
+- Használj flex-box-ot. A flex-direction oszlopos rendezésében helyezd a beltartartalmakat középre (table, és get Book List button) 
 - a 'read-button' elem formázásához  használd a 'read-style' mixin-t.
 - a 'thead és tr'  háttérszíne legyen (background-color): rgb(226, 78, 27).
 - Minden tovább egyéni formázás megengedett.
