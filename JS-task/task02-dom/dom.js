@@ -10,10 +10,33 @@ const bookList = [
 
 function listMyBooks(bookList) {
 
+configStyle();
+
+  const ulEl = document.querySelector('#container');
+  bookList.forEach(book=>{
+    const liEl = document.createElement('li');
+    ulEl.appendChild(liEl);
+    
+    if(book.isRead == true){
+        liEl.innerHTML = '<strong>Ezt a könyvet már olvastad:</strong>' + ' ' +book.title
+    }
+    else
+      liEl.innerHTML = `${book.title}`;
+  })
 }
 
 function configStyle() {
 
+  const sectionElement = document.querySelector('section');
+  sectionElement.style.border = "3px solid red";
+
+  const divEl = document.querySelector('div');
+  divEl.style.display = "flex";
+  divEl.style.justifyContent = "center";
+
+  const pEl = document.querySelector('p');
+  pEl.style.textAlign = "center";
+  pEl.style.color = "red";
 }
 
 export { listMyBooks, configStyle };
